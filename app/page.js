@@ -6,7 +6,5 @@ export const metadata={
   description: 'Welcome to our Homepage'
 }
 export default  async function HomeRoute() {
-
-
 return <Home/>
 }

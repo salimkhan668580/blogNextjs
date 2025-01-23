@@ -26,9 +26,8 @@ function Login() {
           'Content-Type': 'application/json',
         },
       });
-
-
-      if (response.data.userData.role === 'admin') {
+      console.log("respomse is=>", response);
+      if (response?.data?.userData?.role === 'admin') {
         router.push('/admin'); 
       } else {
         router.push('/'); 

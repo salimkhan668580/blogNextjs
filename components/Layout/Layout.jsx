@@ -53,7 +53,7 @@ function Layout({children}) {
       if (token) {
         try {
           const decodedToken = jwtDecode(token);
-          const role = decodedToken.role; 
+          const role = decodedToken?.role; 
           console.log(decodedToken)
           setUser(decodedToken);
 
@@ -62,7 +62,11 @@ function Layout({children}) {
           } else {
             // toast.error("You don't have permission to access this page.1"); 
             setIsChecking(false);
-            setRoleState(role);
+            if(role){
+
+              setRoleState(role);
+            }
+            return
           }
         } catch (error) {
           console.error("Error decoding token", error);
@@ -72,8 +76,13 @@ function Layout({children}) {
         }
       } else {
         setIsChecking(false);
-        setRoleState(role);
-        return  toast.error("You don't have permission to access this page.2");
+
+        router.push("/login")
+
+            //  role&& setRoleState(role);
+            
+        
+        return  toast.error("You don't have permission to access this page.");
       }
     };
 

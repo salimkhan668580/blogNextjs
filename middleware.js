@@ -35,9 +35,9 @@ export async function middleware(request) {
       result.cookies.set("session",JSON.stringify(body),{maxAge:(7*24*60*60*1000)});
       return result;
     } else {
-      // alert("your are not authorized to")
+    
       return res.redirect( request.url);
-      // return res.redirect(new URL('/login', request.url));
+    
     }
     }
   } catch (error) {
