@@ -1,4 +1,5 @@
-import AdminLayout from "@/components/Layout/AdminLayout"
+
+import AdminLayout from "../../components/Layout/AdminLayout"
 
 
 async function Layout({children}) {

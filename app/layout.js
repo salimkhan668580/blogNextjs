@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import toast, { Toaster } from 'react-hot-toast';
 
-import Layout from "@/components/Layout/Layout";
+import Layout from "../components/Layout/Layout";
 
 
 export const metadata = {

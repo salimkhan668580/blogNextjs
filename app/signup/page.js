@@ -1,4 +1,4 @@
-import Singup from "@/components/Singup"
+import Singup from "../../components/Singup"
 
 
 export const metadata={
