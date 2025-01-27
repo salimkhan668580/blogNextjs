@@ -1,8 +1,8 @@
 import { NextResponse as res } from "next/server";  // Alias NextResponse to 'res'
 import bcrypt from "bcrypt";
-import User from "@/backend/Models/userSchema";
-import genToken from "@/lib/genToken";
-import dbConnect from "@/lib/dbConnect";
+import User from "../../../backend/Models/userSchema";
+import genToken from "../../../lib/genToken";
+import dbConnect from "../../../lib/dbConnect";
 import { cookies } from "next/headers";
 
 export const GET = () => {

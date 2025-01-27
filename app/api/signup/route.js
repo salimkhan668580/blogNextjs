@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
-import User from "@/backend/Models/userSchema";
-import dbConnect from "@/lib/dbConnect";
+import User from "../../../backend/Models/userSchema";
+import dbConnect from "../../../lib/dbConnect";
 
 export const POST = async (req) => {
   try {

@@ -1,5 +1,7 @@
-import Blog from "@/backend/Models/blogSchema";
-import dbConnect from "@/lib/dbConnect";
+
+import Blog from "../../../../backend/Models/blogSchema";
+
+import dbConnect from "../../../../lib/dbConnect";
 import { NextResponse as res } from "next/server"
 
 export const POST=async(req, { params })=>{
