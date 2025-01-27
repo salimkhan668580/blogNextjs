@@ -18,7 +18,7 @@ function Login() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data) => { 
     try {
       setLoading(true);
       const response = await axios.post('/api/login', data, {
